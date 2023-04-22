@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="start-part">
+            <h2>Quiz Game</h2>
+            <button class="start-btn">
+                <p>Start Game</p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="loadding-part hide">
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="game-part hide">
+            <div class="questions-wrapper">
+                <ul class="questions">
+                    <!-- <li class="question">
+                        <h3 class="question-tilte">
+                            <span class="question-index">Question 1: </span>
+                            <span class="question-text">tempora nostrum, odio accusamus! Ipsum veniam mollitiodio accusamus! Ipsum veniam mollitia quam?</span>
+                        </h3>
+                        <ul class="answers">
+                            <li class="answer">
+                                <span class="answer-index">1. </span>
+                                <span class="answer-text">7</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">2. </span>
+                                <span class="answer-text">8</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">3. </span>
+                                <span class="answer-text">3</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">4. </span>
+                                <span class="answer-text">2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <h3 class="question-tilte">
+                            <span class="question-index">Question 1: </span>
+                            <span class="question-text">tempora nostrum, odio accusamus! Ipsum veniam mollitia quam?</span>
+                        </h3>
+                        <ul class="answers">
+                            <li class="answer correct">
+                                <span class="answer-index">1. </span>
+                                <span class="answer-text">7</span>
+                            </li>
+                            <li class="answer incorrect">
+                                <span class="answer-index">2. </span>
+                                <span class="answer-text">8</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">3. </span>
+                                <span class="answer-text">3</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">4. </span>
+                                <span class="answer-text">2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <h3 class="question-tilte">
+                            <span class="question-index">Question 1: </span>
+                            <span class="question-text">tempora nostrum, odio accusamus! Ipsum veniam mollitia quam?</span>
+                        </h3>
+                        <ul class="answers">
+                            <li class="answer correct">
+                                <span class="answer-index">1. </span>
+                                <span class="answer-text">7</span>
+                            </li>
+                            <li class="answer incorrect">
+                                <span class="answer-index">2. </span>
+                                <span class="answer-text">8</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">3. </span>
+                                <span class="answer-text">3</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">4. </span>
+                                <span class="answer-text">2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <h3 class="question-tilte">
+                            <span class="question-index">Question 1: </span>
+                            <span class="question-text">tempora nostrum, odio accusamus! Ipsum veniam mollitia quam?</span>
+                        </h3>
+                        <ul class="answers">
+                            <li class="answer correct">
+                                <span class="answer-index">1. </span>
+                                <span class="answer-text">7</span>
+                            </li>
+                            <li class="answer incorrect">
+                                <span class="answer-index">2. </span>
+                                <span class="answer-text">8</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">3. </span>
+                                <span class="answer-text">3</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">4. </span>
+                                <span class="answer-text">2</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question">
+                        <h3 class="question-tilte">
+                            <span class="question-index">Question 1: </span>
+                            <span class="question-text">tempora nostrum, odio accusamus! Ipsum veniam mollitia quam?</span>
+                        </h3>
+                        <ul class="answers">
+                            <li class="answer correct">
+                                <span class="answer-index">1. </span>
+                                <span class="answer-text">7</span>
+                            </li>
+                            <li class="answer incorrect">
+                                <span class="answer-index">2. </span>
+                                <span class="answer-text">8</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">3. </span>
+                                <span class="answer-text">3</span>
+                            </li>
+                            <li class="answer">
+                                <span class="answer-index">4. </span>
+                                <span class="answer-text">2</span>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="game-message hide error"></div>
+            <div class="game-action">
+                <button class="prev disabled">Prev Question</button>
+                <button class="next">Next Question</button>
+                <button class="check-btn">Check Your Answer</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
